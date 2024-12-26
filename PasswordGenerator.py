@@ -22,7 +22,7 @@ def password_generator():
         print("No character types selected. Please select at least one character type.")
 
     password = ''.join(random.choice(character_pool) for _ in range(desired_length))
-    print(password)
+    print("Generated Password:", password)
 
 if __name__ == "__main__":
     password_generator()
